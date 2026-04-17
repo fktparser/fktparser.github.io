@@ -5,7 +5,7 @@ description: >
 
 url: "https://fktparser.github.io"
 
-theme: jekyll-theme-hacker
+theme: jekyll-theme-leap-day
 
 show_downloads: true
 github:
