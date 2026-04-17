@@ -1,6 +1,6 @@
 # FKT — Write Workouts Like a Human
 
-**FKT** (*Format for Kinetic Transcripts*)is a plain-text format for structured training sessions and plans. Describe a workout the way you'd write it on a whiteboard, and let tooling push it to Garmin, Coros, TrainingPeaks, or anywhere else.
+**FKT** (*Format for Kinetic Transcripts*) is a plain-text format for structured training sessions and plans. Describe a workout the way you'd write it on a whiteboard, and let tooling push it to Garmin, Coros, TrainingPeaks, or anywhere else.
 
 No apps. No drag-and-drop. No clicking through ten screens to build an interval set.
 
@@ -204,6 +204,33 @@ Parse a file, get structured Python objects. Plug the output into whatever platf
 Most platforms make you click through a wizard for every single step. Drag reps up and down. Export, re-import, lose your formatting. Switch platforms, start over.
 
 FKT is a text file. It lives in a folder. You can copy it, share it, diff it, store it in Git. One file can hold an entire season of training. A coach can send it as a plain text message.
+
+### How FKT Compares to Other Formats
+
+| Feature                      | FKT           | .FIT               | .TCX       | .GPX       |
+|------------------------------|---------------|--------------------|------------|------------|
+| **Human-readable**           | ✅ Plain text | ❌ Binary          | ⚠️ XML      | ⚠️ XML    |
+| **Human-writable**           | ✅ Yes        | ❌ No              | ❌ Tedious | ❌ Tedious |
+| **Defines workouts**         | ✅ Yes        | ⚠️ Partially       | ❌ No      | ❌ No      |
+| **Defines training plans**   | ✅ Yes        | ❌ No              | ❌ No      | ❌ No      |
+| **Named pace definitions**   | ✅ Yes        | ❌ No              | ❌ No      | ❌ No      |
+| **Repeat blocks**            | ✅ Yes        | ✅ Yes             | ❌ No      | ❌ No      |
+| **Version-controllable**     | ✅ Yes        | ❌ No              | ⚠️ Messy    | ⚠️ Messy  |
+| **Platform-agnostic source** | ✅ Yes        | ❌ Device-specific | ⚠️ Limited  | ❌ No     |
+
+**.FIT** is the dominant format for recorded *activities* — what your watch writes after a run. It's binary, device-generated, and not meant to be authored by hand. Some platforms use it for workout *definitions* too, but you still need their app to create them.
+
+**.TCX** (Training Center XML) is Garmin's older XML format, mostly used for exporting recorded workouts and courses. It can carry structured workout data, but hand-editing XML for a 10-step interval session isn't anyone's idea of a good time.
+
+**.GPX** is a GPS exchange format. Great for routes and recorded tracks; it has no concept of effort targets, repeats, or training plans.
+
+FKT is the only format in this list designed for *authoring* workouts — writing them from scratch, in a way that's readable without a tool to decode it.
+
+---
+
+### What FKT is **not**
+
+FKT is **not** a format for describing a **performed** activity. It's not meant for including coordinates, auxiliary data (such as measured heart rate) etc.
 
 ---
 

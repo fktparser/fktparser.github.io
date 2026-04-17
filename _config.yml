@@ -1,11 +1,11 @@
 title: FKT — Write Workouts in Plain Text
 description: >
-  A human-readable format for structured training sessions and plans.
-  Write workouts as plain text, export to Garmin, Coros, TrainingPeaks, and more.
+  A human-readable format for structured training sessions and plans. Write
+  workouts as plain text, export to Garmin, Coros, TrainingPeaks, and more.
 
 url: "https://fktparser.github.io"
 
-theme: jekyll-theme-cayman
+theme: jekyll-theme-hacker
 
 show_downloads: true
 github:
