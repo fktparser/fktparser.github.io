@@ -1,6 +1,6 @@
 # FKT — Write Workouts Like a Human
 
-**FKT** (*Format for Kinetic Transcripts*) is a plain-text format for structured training sessions and plans. Describe a workout the way you'd write it on a whiteboard, and let tooling push it to Garmin, Coros, TrainingPeaks, or anywhere else.
+FKT (***Format for Kinetic Transcripts***) is a plain-text format for structured training sessions and plans. Describe a workout the way you'd write it on a whiteboard, and let tooling push it to Garmin, Coros, TrainingPeaks, or anywhere else.
 
 No apps. No drag-and-drop. No clicking through ten screens to build an interval set.
 
